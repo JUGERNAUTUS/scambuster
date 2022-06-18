@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Scambuster",
+  "version": "1.0",
+
+  "description": "Detects Scam Websites and alerts you",
+  "homepage_url": "https://google.com/",
+  "icons": {
+    "48": "icons/sb-48-r.png",
+    "96": "icons/sb-96-r.png"
+  },
+
+  "permissions": ["<all_urls>", "tabs"],
+
+  "browser_action": {
+    "default_icon": "icons/sb-48-r.png",
+    "default_title": "Scambuster",
+    "default_popup": "popup/scambuster.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-scripts/content.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background/background.js"]
+  }
+}

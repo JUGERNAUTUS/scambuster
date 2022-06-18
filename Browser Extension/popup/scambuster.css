@@ -1,0 +1,23 @@
+html,
+body {
+  width: 150px;
+}
+
+.popup-content {
+  border-width: 5px;
+  border-color: #d7d4d4;
+  text-align: center;
+  /* display: flex;
+  align-content: center;
+  flex-wrap: wrap; */
+  margin: 0 auto;
+  /* background-color: #ee9797; */
+}
+
+.visit-btn {
+  padding: 5px;
+  background-color: #343434;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #d7d4d4;
+}
