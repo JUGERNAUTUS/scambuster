@@ -1,0 +1,84 @@
+import React from 'react';
+
+function Aboutus(props) {
+
+    const donateAddress = '0x1a05D8a43a88b532bB47D2317C4A34a891Be2D4E'
+
+    return (
+        <div className="columns is-centered">
+	    <section class="hero is-fullheight">
+                <div class="hero-body has-text-centered">
+	    	    <div className="columns">
+                    <div className="column is-10 is-offset-1">
+                        
+                        
+                        
+                        <h1 className='title is-3'><b>About Scambuster</b></h1><br></br>
+                        
+                        <p className='has-text-left'>Scambuster is a DApp for crowdsourcing and reporting fake/scammy website. Anyone can report a scammy website with screenshots and their comments</p><br></br>
+	     <p className='has-text-left'>Validators vote on scammy websites. If a website gets more than 50% of the validators vote, it is marked as a scammy website</p><br></br>
+      <p className='has-text-left'>You can download and install the Scambuster browser extension <a><b>here</b></a>. It'll immediately notify you if a website has been voted a scam</p><br></br>
+                    </div>
+                </div>
+	        <div className="columns is-centered">
+                    <div className="column has-text-centered">
+                        <h1 className='title is-3'><b>Team Quantlab</b></h1><br></br>
+                        <div class="card">
+  			
+    				<figure class="image is-128x128">
+      					<img className ="is-rounded" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+    				</figure>
+  			
+  			<div class="card-content">
+    				<div class="media">
+      			        <div class="media-content">
+        			<p class="title is-4">Ishan Roy</p>
+        			<p class="subtitle is-6">@ishanroy</p>
+	                        <p><a>https://linktr.ee/ishanroyblockchain</a></p>
+      				</div>
+    			        </div>
+
+                       </div>
+                      </div>
+	              <div class="card">
+                        
+                                <figure class="image is-128x128">
+                                        <img className="is-rounded" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                                </figure>
+                        
+                        <div class="card-content">
+                                <div class="media">
+                                <div class="media-content">
+                                <p class="title is-4">Manu Areraa</p>
+                                <p class="subtitle is-6">@manuareraa</p>
+                                <p><a>https://linktr.ee/manuareraa</a></p>
+                                </div>
+                                </div>
+                       </div>
+                      </div>
+                    </div>
+                </div>
+	        </div>
+            </section>
+            
+
+
+
+
+	    <section class="hero is-fullheight">
+                <div class="hero-body has-text-centered">
+                    <div class="login">
+                        <img src={'/images/donate.svg'} style={{width: '120px', height: '120px', marginBottom: '20px'}}></img>
+                        <div className="has-background-dark has-text-white py-4 px-4" style={{borderRadius: '5px'}}>Donate Below</div>
+                        <br></br>
+                        <p className='title is-5'><b>{donateAddress}</b></p>
+                        <button className='button is-link mb-3' onClick={() => navigator.clipboard.writeText(donateAddress)}>Copy Address</button>
+                        <p className='has-text-link'>Polygon/Ethereum Address</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
+
+export default Aboutus;
